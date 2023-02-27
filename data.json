@@ -1,0 +1,45 @@
+[
+    {
+        "en" : {"text": "«Success does not consist in never making mistakes but in never making the same one a second time.»", 
+                "author": "Bernard Shaw"},
+        "ru" : {"text" : "«Секрет успеха заключается не в том, чтобы не делать ошибок, а в том, чтобы не повторять одних и тех же ошибок дважды.»", 
+                "author": "Бернард Шоу"}  
+    },
+    {
+        "en" : {"text": "«Simplicity is the ultimate sophistication.»",
+                "author": "Leonardo da Vinci"},
+        "ru" : {"text": "«Простота есть высшая степень утонченности.»",
+                "author": "Леонардо да Винчи"}
+    },
+    {
+        "en" : {"text": "«Always forgive your enemies; nothing annoys them so much.»", 
+                "author": "Oscar Wilde"},
+        "ru" : {"text": "«Всегда прощайте ваших врагов, ничто не раздражает их больше»", 
+                "author": "Оскар Уайлд"}
+    }, 
+
+    {
+        "en" : {"text": "«No two persons ever read the same book.»",
+                "author": "Woodrow Wilson"},
+        "ru" : {"text": "«Пока мы откладываем все дела на потом, жизнь проходит мимо.»",
+                "author": "Вудро Вильсон"}
+    }, 
+    {
+        "en" : {"text": "«Music is the universal language of mankind.»",
+                "author": "Henry Wadsworth Longfellow"},
+        "ru" : {"text": "«Музыка — это универсальный язык человечества.»",
+            "author": "Генри Уодсворт Лонгфелло"}
+    }, 
+    {
+        "en" : {"text": "«Never regret anything that made you smile.»",
+                "author": "Mark Twain"},
+        "ru" : {"text": "«Никогда не сожалей о том, что заставляет тебя улыбаться.»",
+                "author": "Марк Твен"}
+    }, 
+    {
+        "en" : {"text": "«If you only read the books that everyone else is reading, you can only think what everyone else is thinking.»",
+                "author": "Haruki Murakami"},
+        "ru" : {"text": "«Если ты читаешь только те книги, которые читают остальные, ты будешь думать только то, что думают остальные.»",
+                "author": "Харуки Мураками"}
+    }
+]
