@@ -68,11 +68,15 @@ const timeOfDayLang = {
 const weatherLang = {
     ru : {
         humidity: 'Влажность',
-        windSpeed: 'Скорость ветра'
+        windSpeed: 'Скорость ветра',
+        error: 'Город не найден',
+        placeholder: 'Пожалуйста, введите город'
     },
     en : {
         humidity: 'Humidity',
-        windSpeed: 'Wind speed'
+        windSpeed: 'Wind speed',
+        error: 'City not found',
+        placeholder: 'Please, enter city'
     }
 };
 const ms = {
@@ -273,6 +277,8 @@ if (localStorage.getItem('userCity')) {
     userCity.value = 'Minsk';
 }
 
+const weaterError = document.querySelector('.weather-error');
+
 async function getWeather(c, l, m) { 
     try {
         const url = `https://api.openweathermap.org/data/2.5/weather?q=${c}&lang=${l}&appid=d678403322adcf141be71adc7ef315dc&units=metric`;
@@ -291,8 +297,11 @@ async function getWeather(c, l, m) {
         
         localStorage.setItem('userCity', userCity.value);
         userCity.value = data.name;
+        weaterError.textContent = '';
+        userCity.placeholder = weatherLang[l].placeholder;
     } catch (e) {
-        userCity.value = 'Please, enter city';
+        userCity.placeholder = weatherLang[l].placeholder;
+        weaterError.textContent = weatherLang[l].error;
         console.log(`Error! ${e}`);
     }
 }
@@ -545,7 +554,7 @@ function createLink() {
 
         newLinkItem.classList.add('links-item');
         newLinkItem.innerHTML = `
-            <a href="https://${linkUrlInput.value}" class="link" target="_blank">
+            <a href="${linkUrlInput.value}" class="link" target="_blank">
                 <img src="assets/svg/link.svg" alt="icon: link-icon" class="link-icon">
                 <span class="link-name">${linkNameInput.value}</span>
             </a>
